@@ -1,0 +1,33 @@
+digraph FaultHandling {
+graph [rankdir=TB, bgcolor="white", pad="0.3", nodesep="0.3", ranksep="0.38", fontname="DejaVu Sans", label="CSMS — Fault Handling", labelloc=t, fontsize=20];
+node [shape=box, style="rounded,filled", fillcolor="#e8f4f8", color="#236b85", fontname="DejaVu Sans", fontsize=11, margin="0.16,0.10"];
+edge [color="#334155", fontname="DejaVu Sans", fontsize=10, arrowsize=0.7];
+start [shape=circle, label="", width=0.15, style=filled, fillcolor="#0e2539"];
+entry [shape=diamond, label="Detection source", fillcolor="#fff3d8"];
+manual [label="Receive manual fault report"];
+automatic [label="Receive monitoring alert"];
+validate [label="Validate fault details"];
+complete [shape=diamond, label="Information complete?", fillcolor="#fff3d8"];
+info [label="Request and record missing information"];
+ticket [label="Record asset status, prioritize fault\nand create ticket / work order"];
+remote [label="Review asset history; perform remote action\nand record result"];
+resolved [shape=diamond, label="Fault resolved?", fillcolor="#fff3d8"];
+field [label="Assign field technician or contractor;\nrecord diagnosis and work details"];
+repairable [shape=diamond, label="Repair possible?", fillcolor="#fff3d8"];
+repair [label="Repair asset and record outcome"];
+decision [label="Record management decision"];
+approved [shape=diamond, label="Replacement approved?", fillcolor="#fff3d8"];
+replace [label="Replace asset and record outcome"];
+verify [shape=diamond, label="Operational condition confirmed?", fillcolor="#fff3d8"];
+restore [label="Restore asset to service;\nrecord resolution and close ticket"];
+oos [label="Keep asset out of service;\nrecord decision and ticket outcome", fillcolor="#fde9e7", color="#af4646"];
+end [shape=doublecircle, label="", width=0.18, style=filled, fillcolor="#0e2539"];
+start->entry;entry->manual [label="Manual"];entry->automatic [label="Automatic"];
+manual->validate;automatic->validate;validate->complete;
+complete->info [label="No"];info->validate;complete->ticket [label="Yes"];
+ticket->remote;remote->resolved;resolved->verify [label="Yes"];resolved->field [label="No"];
+field->repairable;repairable->repair [label="Yes"];repairable->decision [label="No"];
+decision->approved;approved->replace [label="Yes"];approved->oos [label="No"];
+repair->verify;replace->verify;verify->restore [label="Yes"];verify->field [label="No"];
+restore->end;oos->end;
+}
