@@ -35,7 +35,6 @@ A three-phase undergraduate Management Information Systems group project that co
 - Explore the [desktop and mobile prototypes](docs/PROTOTYPE.md).
 - Follow the [story-to-report and design mapping](traceability.csv).
 - Read about [project organization](docs/PROJECT-MANAGEMENT.md).
-- Download the [phase 1 presentation](supplementary/phase1-presentation.pptx).
 
 ## Operational scope
 
@@ -53,7 +52,6 @@ The interface provides views for a system administrator, charging-network operat
 | `assets/uml/` | Diagram images organized by workflow |
 | `assets/ui/` | Interface previews |
 | `models/` | Editable diagram sources |
-| `supplementary/` | Project presentation |
 
 ## Academic context
 
