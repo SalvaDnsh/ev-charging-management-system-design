@@ -34,10 +34,10 @@ The design system includes a shared palette, typography, navigation, form contro
 
 ## Portfolio contents
 
-The repository includes Persian reports for all three phases, an English project overview, diagram images, editable model files, desktop/mobile prototype links and a story-to-frame mapping. The project demonstrates requirements analysis, domain modeling, workflow design, UX specification and collaborative project organization.
+The repository includes main English reports for all three phases, supplementary Persian reports, an English project overview, diagram images, editable model files, desktop/mobile prototype links and a story-to-frame mapping. The project demonstrates requirements analysis, domain modeling, workflow design, UX specification and collaborative project organization.
 
-- [Phase 1 reports](fa/phase1/report.md)
-- [Phase 2 reports](fa/phase2/report.md)
-- [Phase 3 reports](fa/phase3/report.md)
+- [Phase 1 — Requirements](en/phase-1-requirements.md)
+- [Phase 2 — System modeling](en/phase-2-system-modeling.md)
+- [Phase 3 — User experience](en/phase-3-ux-design.md)
 - [UML gallery and model files](UML.md)
 - [Interface prototypes](PROTOTYPE.md)

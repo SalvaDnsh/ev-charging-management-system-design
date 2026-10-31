@@ -22,4 +22,4 @@ Select a role at the prototype entry screen to explore its dashboard. The interf
 
 ![Charging-session monitoring](../assets/ui/session-monitoring.png)
 
-See [personas, user stories and acceptance criteria](fa/phase3/report.md) and the [story-to-frame mapping](../traceability.csv).
+See [personas, user stories and acceptance criteria](en/phase-3-ux-design.md) and the [story-to-frame mapping](../traceability.csv).

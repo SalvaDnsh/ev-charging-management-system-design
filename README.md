@@ -16,20 +16,21 @@ A three-phase undergraduate Management Information Systems group project that co
 | Detailed workflows | Station and charger lifecycle, charging sessions, fault handling |
 | Methods | Requirements analysis, UML, personas, user stories, acceptance criteria and Kanban |
 | Design tools | Visual Paradigm, Figma and Graphviz |
-| Languages | English project overview and diagrams; Persian reports and interface labels |
+| Languages | English main reports, overview and diagram explanations; Persian supplementary sources and prototype labels |
 
 ## Three project phases
 
 | Phase | Focus | Deliverables |
 | --- | --- | --- |
-| 1 — Requirements | Operating context, stakeholders and five core workflows | [Requirements reports](docs/fa/phase1/report.md) |
-| 2 — Analysis and design | Three detailed workflows, modeled with four UML diagram types | [Modeling reports](docs/fa/phase2/report.md) · [Diagram gallery](docs/UML.md) |
-| 3 — User experience | Personas, 17 user stories, acceptance criteria and seven user roles | [UX specifications](docs/fa/phase3/report.md) · [Figma prototypes](docs/PROTOTYPE.md) |
+| 1 — Requirements | Operating context, stakeholders and five core workflows | [English requirements report](docs/en/phase-1-requirements.md) |
+| 2 — Analysis and design | Three detailed workflows, modeled with four UML diagram types | [English modeling report](docs/en/phase-2-system-modeling.md) · [Diagram gallery](docs/UML.md) |
+| 3 — User experience | Personas, 17 user stories, acceptance criteria and seven user roles | [English UX report](docs/en/phase-3-ux-design.md) · [Figma prototypes](docs/PROTOTYPE.md) |
 
 ## Explore the project
 
 - Start with the [English project overview](docs/CASE-STUDY.md).
-- Browse the [Persian report collection](docs/fa/INDEX.md).
+- Read the [three main English reports](docs/en/README.md).
+- Consult the [Persian source collection](docs/fa/INDEX.md) as supplementary material.
 - View the [diagrams and editable models](docs/UML.md).
 - Explore the [desktop and mobile prototypes](docs/PROTOTYPE.md).
 - Follow the [story-to-report and design mapping](traceability.csv).
@@ -46,7 +47,9 @@ The interface provides views for a system administrator, charging-network operat
 
 | Folder | Contents |
 | --- | --- |
-| `docs/` | Project overview, reports, diagram gallery and prototype guide |
+| `docs/en/` | Main English reports for all three phases |
+| `docs/fa/` | Supplementary Persian reports |
+| `docs/` | Project overview, diagram gallery and prototype guide |
 | `assets/uml/` | Diagram images organized by workflow |
 | `assets/ui/` | Interface previews |
 | `models/` | Editable diagram sources |
